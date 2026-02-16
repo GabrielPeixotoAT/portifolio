@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    background-color: var(--secondary) !important;
+    color: var(--text-light);
+}
+
+.primary-font {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.border-glow {
+    border: 1px solid var(--primary);
+    box-shadow: 0px 1px 4px var(--primary);
+}
+
+.badge-primary {
+    background-color: var(--primary);
+    border: 1px solid var(--primary-border);
+}
+
+.badge-secondary {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+}
+
+:root {
+    --primary: #3925eb;
+    --primary-purple: #3d32db;
+    --secondary: #110f2a;
+    
+    --accent: #10b981;
+    --text-light: #f8f8fc;
+    --text-gray: #9496b8;
+    --card-bg: #201e3b;
+    --orange: #f97316;
+
+    --primary-border: #5947ff;
+    --secondary-border: #2e2851;
+
+    --card-border: #323055;
+}
+
+::selection {
+    background-color: var(--text-light);
+    color: var(--secondary);
+}

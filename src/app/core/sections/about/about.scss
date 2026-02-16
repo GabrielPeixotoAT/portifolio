@@ -1,0 +1,64 @@
+:host {
+    h3::after {
+        content: '';
+        display: block;
+        width: 60%;
+        height: 4px;
+        background: var(--primary);
+        margin-top: 0.5rem;
+        border-radius: 2px;
+    }
+
+    .card {
+        background-color: var(--card-bg);
+        border: 1px solid var(--card-border);
+        transition: .3s;
+    }
+    .card:hover {
+        transform: translateY(-0.25rem);
+    }
+
+    .card.cat-dev {
+        border-left: 3px solid var(--primary);
+    } 
+    .card.cat-dev:hover {
+        border: 1px solid var(--primary);
+        border-left: 3px solid var(--primary);
+    }
+    
+    .card.cat-db {
+        border-left: 3px solid var(--text-gray);
+    }
+    .card.cat-db:hover {
+        border: 1px solid var(--text-gray);
+        border-left: 3px solid var(--text-gray);
+    }
+
+    .card.cat-cloud {
+        border-left: 3px solid var(--orange);
+    }
+    .card.cat-cloud:hover {
+        border: 1px solid var(--orange);
+        border-left: 3px solid var(--orange);
+    }
+
+    .card.cat-game {
+        border-left: 3px solid var(--primary-purple);
+    }
+    .card.cat-game:hover {
+        border: 1px solid var(--primary-purple);
+        border-left: 3px solid var(--primary-purple);
+    }
+
+    .card.cat-elec {
+        border-left: 3px solid var(--accent);
+    }
+    .card.cat-elec:hover {
+        border: 1px solid var(--accent);
+        border-left: 3px solid var(--accent);
+    }
+
+    .card-header {
+        border-bottom: none;
+    }
+}
