@@ -1,0 +1,16 @@
+:host {
+    section#about {
+        padding-top: 3rem;
+    }
+
+    section#projects {
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    section#lab {
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        background-color: var(--card-bg);
+    }
+}

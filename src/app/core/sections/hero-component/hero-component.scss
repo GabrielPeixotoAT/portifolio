@@ -57,9 +57,10 @@
         background: var(--primary); 
         color: var(--text-light); 
         text-decoration: none; 
-        border-radius: 1rem; 
+        border-radius: 1.25rem; 
         font-weight: bold;
-        transition: .3s;
+        padding: .5rem 1.625rem;
+        transition: .2s;
     }
         .btn-primary-purple:hover {
             background: var(--primary-purple); 

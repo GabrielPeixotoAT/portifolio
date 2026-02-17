@@ -9,6 +9,11 @@
         border-radius: 2px;
     }
 
+    h4 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.5rem;
+    }
+
     .card {
         background-color: var(--card-bg);
         border: 1px solid var(--card-border);
@@ -24,6 +29,7 @@
     .card.cat-dev:hover {
         border: 1px solid var(--primary);
         border-left: 3px solid var(--primary);
+        box-shadow: 0px 0px 4px var(--primary);
     }
     
     .card.cat-db {
@@ -32,6 +38,7 @@
     .card.cat-db:hover {
         border: 1px solid var(--text-gray);
         border-left: 3px solid var(--text-gray);
+        box-shadow: 0px 0px 4px var(--text-gray);
     }
 
     .card.cat-cloud {
@@ -40,6 +47,7 @@
     .card.cat-cloud:hover {
         border: 1px solid var(--orange);
         border-left: 3px solid var(--orange);
+        box-shadow: 0px 0px 4px var(--orange);
     }
 
     .card.cat-game {
@@ -48,6 +56,7 @@
     .card.cat-game:hover {
         border: 1px solid var(--primary-purple);
         border-left: 3px solid var(--primary-purple);
+        box-shadow: 0px 0px 4px var(--primary-purple);
     }
 
     .card.cat-elec {
@@ -56,9 +65,23 @@
     .card.cat-elec:hover {
         border: 1px solid var(--accent);
         border-left: 3px solid var(--accent);
+        box-shadow: 0px 0px 4px var(--accent);
+    }
+
+    .card.cat-others {
+        border-left: 3px solid var(--red);
+    }
+    .card.cat-others:hover {
+        border: 1px solid var(--red);
+        border-left: 3px solid var(--red);
+        box-shadow: 0px 0px 4px var(--red);
     }
 
     .card-header {
         border-bottom: none;
+    }
+
+    ul {
+        margin: 0;
     }
 }

@@ -1,0 +1,26 @@
+:host {
+    h3 {
+        font-family: 'Ubuntu', sans-serif;
+    }
+    h3::after {
+        content: '';
+        display: block;
+        width: 60%;
+        height: 4px;
+        background: var(--primary);
+        margin-top: 0.5rem;
+        border-radius: 2px;
+    }
+
+    h4 {
+        color: var(--text-light);
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .card {
+        background-color: var(--secondary);
+        border: 1px solid var(--primary);
+        box-shadow: 0px 0px 4px var(--primary);
+        transition: .3s;
+    }
+}

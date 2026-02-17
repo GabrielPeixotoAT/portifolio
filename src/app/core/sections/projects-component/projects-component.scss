@@ -1,0 +1,14 @@
+:host {
+    h3 {
+        font-family: 'Ubuntu', sans-serif;
+    }
+    h3::after {
+        content: '';
+        display: block;
+        width: 60%;
+        height: 4px;
+        background: var(--primary);
+        margin-top: 0.5rem;
+        border-radius: 2px;
+    }
+}
