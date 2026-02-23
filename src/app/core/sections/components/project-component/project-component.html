@@ -1,16 +1,16 @@
-<div class="card"> 
-    <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225" 
-        preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
-
-    </svg>
+<div [class]="project.classes">
+    <div class="img-container">
+        <img [src]="project.imageUrl" class="card-img-top" width="100%" />
+    </div>
+    <!--<img class="card-img-top" height="270" width="100%" />-->
     <div class="card-body">
-        <h5 class="fs-5 text-light">
+        <h5 class="fs-5 text-light p-3 pb-2 m-0">
             {{ project.name }}
         </h5>
-        <p class="fs-6 text-light">
+        <p class="fs-6 text-light m-0 px-3 py-2">
             {{ project.description}}
         </p>
-        <div class="row gap-2 m-0">
+        <div class="row gap-2 m-0 p-3">
             @for (tag of project.tags; track tag) {
                 <span class="badge badge-primary col-auto">
                     {{ tag }}

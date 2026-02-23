@@ -15,29 +15,25 @@ export class ProjectsComponent {
                 "Um sistema web completo para gerenciar diálogos e missões de jogos (Quest System). Permite a criação dinâmica de grafos de conversação e exportação de JSON para engines de jogos.", 
                 [
                     ".NET",
+                    "JavaScript",
                     "PostgreSQL",
                     "RabbitMQ",
                     "Stripe"
-                ]
-            ),
-            new Project(
-                "Map Creator", 
-                "Ferramenta web interativa para criação de mapas de RPG no estilo 'Inkarnate'. Utiliza Canvas API para renderização de assets e manipulação de camadas em tempo real.", 
-                [
-                    "ASP.NET Web API",
-                    "Angular",
-                    "MongoDB"
-                ]
+                ],
+                'img/gameStoryWriter.webp',
+                'card gsw'
             ),
             new Project(
                 "Chronicles of Arcanum", 
                 "Desenvolvimento de mecânicas para um jogo RPG, incluindo sistemas de combate avançados.", 
                 [
+                    "Game Dev",
                     "Unity",
                     "C#",
-                    "Blender",
-                    "Game Dev"
-                ]
+                    "Blender"
+                ],
+                'img/chroniclesOfArcanum.webp',
+                'card coa'
             )
         ];
 }

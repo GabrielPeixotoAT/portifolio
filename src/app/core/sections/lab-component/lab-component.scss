@@ -23,4 +23,9 @@
         box-shadow: 0px 0px 4px var(--primary);
         transition: .3s;
     }
+        .card:hover {
+            background-color: var(--primary);
+            border: 1px solid var(--primary-border);
+            box-shadow: 0px 0px 8px var(--primary-border);
+        }
 }
