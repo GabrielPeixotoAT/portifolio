@@ -46,19 +46,23 @@
     }
     .card.gsw:hover > .img-container {
         box-shadow: 0px 0px 8px #dfcbc4;
+        border: 1px solid #dfcbc4;
+        border-bottom: none;
     }
     .card.coa:hover > .img-container {
         box-shadow: 0px 0px 8px #cce3e7;
+        border: 1px solid #b0c5c9;
+        border-bottom: none;
     }
 
     .card > .img-container img {
         opacity: 0.9;
-        //filter: blur(1px);
+        filter: blur(1px);
         transition: .3s;
     }
     .card:hover > .img-container img {
         opacity: 1;
-        //filter: blur(0px);
+        filter: blur(0px);
         transform: scale(1.025);
     }
 }

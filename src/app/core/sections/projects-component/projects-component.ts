@@ -12,7 +12,10 @@ export class ProjectsComponent {
     projects: Array<Project> = [
             new Project(
                 "Game Story Writer", 
-                "Um sistema web completo para gerenciar diálogos e missões de jogos (Quest System). Permite a criação dinâmica de grafos de conversação e exportação de JSON para engines de jogos.", 
+                `<p class="mb-1">Plataforma web para organização e gerenciamento de diálogos, missões e elementos narrativos de jogos RPG.</p>
+                <p class="mb-1">Projeto autoral com responsabilidade completa sobre arquitetura, modelagem de domínio, infraestrutura, deploy 
+                    em nuvem e versionamento.</p>
+                <p class="mb-1">Publicação prevista para 2026.</p>`, 
                 [
                     ".NET",
                     "JavaScript",
@@ -25,7 +28,9 @@ export class ProjectsComponent {
             ),
             new Project(
                 "Chronicles of Arcanum", 
-                "Desenvolvimento de mecânicas para um jogo RPG, incluindo sistemas de combate avançados.", 
+                `<p class="mb-1">Jogo autoral desenvolvido na Unity (C#), do gênero RPG de Ação com perspectiva isométrica.</p>
+                <p class="mb-1">Implementação de sistemas modulares de combate, inventário, missões e diálogos, com foco em organização de código 
+                    e reutilização de componentes.</p>`, 
                 [
                     "Game Dev",
                     "Unity",

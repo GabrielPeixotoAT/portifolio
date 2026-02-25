@@ -7,9 +7,8 @@
         <h5 class="fs-5 text-light p-3 pb-2 m-0">
             {{ project.name }}
         </h5>
-        <p class="fs-6 text-light m-0 px-3 py-2">
-            {{ project.description}}
-        </p>
+        <div class="fs-6 text-light m-0 px-3 py-2" [innerHTML]="project.description">
+        </div>
         <div class="row gap-2 m-0 p-3">
             @for (tag of project.tags; track tag) {
                 <span class="badge badge-primary col-auto">
