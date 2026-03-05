@@ -15,7 +15,7 @@
                 "locales": {
                     "en": {
                         "translation": "src/locale/messages.en.xlf",
-                        "baseHref": "/en/"
+                        "subPath": "en"
                     }
                 }
             },
@@ -70,7 +70,7 @@
                                 }
                             ],
                             "outputHashing": "all",
-                            "localize": ["pt", "en"]
+                            "localize": true
                         },
                         "development": {
                             "optimization": false,
@@ -116,6 +116,9 @@
                         ],
                         "scripts": []
                     }
+                },
+                "deploy": {
+                  "builder": "angular-cli-ghpages:deploy"
                 }
             }
         }
