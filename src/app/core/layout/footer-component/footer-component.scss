@@ -16,13 +16,27 @@
         gap: 4px;
     }
 
+    .nav-item {
+        display: flex;
+    }
+
     .nav-link {
         color: var(--text-light);
         padding: .325rem .75rem;
         border: 1px solid #0e0c20;
-        transition: .3s;
+        transition: .2s;
     }
     .nav-link:hover {
         border-bottom: 1px solid var(--primary);
+    }
+
+    .ctt-link {
+        color: var(--text-light);
+        padding: .325rem .75rem;
+        transition: .2s;
+    }
+    .ctt-link:hover {
+        color: var(--primary);
+        transform: scale(1.2);
     }
 }

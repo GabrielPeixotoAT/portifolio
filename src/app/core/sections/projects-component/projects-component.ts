@@ -24,7 +24,8 @@ export class ProjectsComponent {
                     "Stripe"
                 ],
                 'img/gameStoryWriter.webp',
-                'card gsw'
+                'card gsw',
+                'https://storywriter.theropodsoftworks.com/'
             ),
             new Project(
                 "Chronicles of Arcanum", 
@@ -38,7 +39,8 @@ export class ProjectsComponent {
                     "Blender"
                 ],
                 'img/chroniclesOfArcanum.webp',
-                'card coa'
+                'card coa',
+                'https://www.theropodsoftworks.com/chronicles-of-arcanum'
             )
         ];
 }

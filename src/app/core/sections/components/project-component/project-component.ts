@@ -8,5 +8,9 @@ import { Project } from '../../../models/project';
   styleUrl: './project-component.scss',
 })
 export class ProjectComponent {
-    @Input() project: Project = new Project("", "", [], '', '');
+    @Input() project: Project = new Project("", "", [], '', '', '');
+
+    goToProject(projectUrl: string): void {
+        window.open(projectUrl);
+    }
 }

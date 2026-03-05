@@ -12,11 +12,13 @@
     }
     .my-name {
         color: var(--text-light);
-        //background-color: var(--secondary);
-        //border: 1px solid var(--primary-border);
         border-radius: .5rem;
         padding: .25rem 1rem;
         font-size: 1.25rem;
+        transition: .3s;
+    }
+    .my-name:hover {
+        transform: scale(1.075);
     }
 
     .nav-link {
@@ -42,7 +44,7 @@
         left: 0;
         transform: scaleX(0);
         transform-origin: left;
-        transition: transform 0.15s ease-out;
+        transition: transform 0.14s ease-out;
     }
 
     .nav-link:hover::after {

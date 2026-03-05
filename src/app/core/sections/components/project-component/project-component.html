@@ -1,4 +1,4 @@
-<div [class]="project.classes">
+<div [class]="project.classes" (click)="goToProject(project.url)" style="cursor: pointer;">
     <div class="img-container">
         <img [src]="project.imageUrl" class="card-img-top" width="100%" />
     </div>
