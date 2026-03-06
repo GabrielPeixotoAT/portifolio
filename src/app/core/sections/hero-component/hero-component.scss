@@ -68,4 +68,134 @@
             border-radius: .25rem; 
             transform: scale(1.05);
         }
+    
+
+    .orbit-container {
+        margin: 0;
+        background-color: transparent;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center {
+        width: 50px;
+        height: 50px;
+        background: var(--center-color);
+        border-radius: 50%;
+        box-shadow: 0 0 40px var(--center-color);
+        z-index: 100;
+    }
+
+    /* Container da Órbita (O trilho) */
+    .orbit-path {
+        position: absolute;
+        border-radius: 50%;
+        border: 1px solid var(--card-border);
+        width: var(--radius);
+        height: var(--radius);
+        pointer-events: none; /* Não interfere em cliques */
+        z-index: -1;
+    }
+
+    /* Wrapper da animação: este cara gira */
+    .orbit-wrapper {
+        position: absolute;
+        width: var(--radius);
+        height: var(--radius);
+        display: flex;
+        justify-content: center;
+        /* A animação começa em um ponto específico baseado no --delay */
+        animation: rotate var(--duration) linear infinite;
+        animation-delay: var(--delay, 0s); 
+    }
+
+    .item {
+        width: var(--orbirt-item-size);
+        height: var(--orbirt-item-size);
+        background: #3498db;
+        border-radius: calc(var(--orbirt-item-size) / 2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        
+        /* Posiciona no topo da órbita */
+        position: absolute;
+        top: calc(var(--orbirt-item-size) / -2); 
+
+        /* Mantém o item "de pé" compensando a rotação */
+        animation: counter-rotate var(--duration) linear infinite;
+        animation-delay: var(--delay, 0s);
+    }
+
+    .bg-red {
+        background-color: var(--red) !important;
+    }
+
+    .bg-green {
+        background-color: var(--accent) !important;
+    }
+
+    .bg-orange {
+        background-color: var(--orange) !important;
+    }
+
+    .bg-purple {
+        background-color: var(--primary);
+    }
+
+    .bg-purple-secondary {
+        background-color: var(--primary-purple);
+    }
+
+    .bg-blue {
+        background-color: var(--blue);
+    }
+
+    .card-glass {
+        border-radius: 1.5rem;
+        background: rgba(0,0,0,0.05);
+        padding: 1rem 2rem;
+        backdrop-filter: blur(8px);
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+        //box-shadow: 0px 1px 6px var(--primary-purple);
+    }
+
+    .card-glass-bordered {
+        border-radius: 1.5rem;
+        background: rgba(0,0,0,0.05);
+        padding: 1.5rem 2.5rem;
+        border: 1px solid var(--card-border);
+        backdrop-filter: blur(8px);
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .card-glass-clean {
+        border-radius: 1.5rem;
+        padding: 1rem 2rem;
+        backdrop-filter: blur(8px);
+    }
+
+    .icon-container {
+        background-color: var(--text-light);
+        width: 24px;
+        height: 24px;
+        mask-size: contain;
+        mask-repeat: no-repeat;
+    }
+
+    @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    @keyframes counter-rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(-360deg); }
+    }
 }
