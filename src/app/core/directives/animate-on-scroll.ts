@@ -25,7 +25,6 @@ export class AnimateOnScrollDirective {
     }
 
     private setupObserver(): void {
-        console.log("RODOU!");
         const options = {
             root: null,
             rootMargin: '0px',

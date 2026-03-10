@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
-import { Project } from '../../../models/project';
+import { Project } from '../../../../core/models/project';
 
 @Component({
-  selector: 'app-project-component',
+  selector: 'app-project-card-component',
   imports: [],
-  templateUrl: './project-component.html',
-  styleUrl: './project-component.scss',
+  templateUrl: './project-card-component.html',
+  styleUrl: './project-card-component.scss',
 })
-export class ProjectComponent {
+export class ProjectCardComponent {
     @Input() project: Project = new Project("", "", [], '', '', '');
 
     goToProject(projectUrl: string): void {

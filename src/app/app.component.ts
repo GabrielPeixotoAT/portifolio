@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-import { MainLayout } from "./core/layout/main-layout/main-layout";
+import { Navbar } from "./core/layout/navbar/navbar";
+import { RouterOutlet } from '@angular/router';
+import { FooterComponent } from "./core/layout/footer-component/footer-component";
 
 @Component({
   selector: 'app-root',
-  imports: [MainLayout],
+  imports: [Navbar, FooterComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
