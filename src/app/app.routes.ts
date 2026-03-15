@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { Eletronics } from './features/lab/pages/eletronics/eletronics';
 import { HomeComponent } from './features/home/home-component/home-component';
+import { EletronicsComponent } from './features/lab/pages/eletronics-component/eletronics-component';
 
 export const routes: Routes = [
     {
@@ -11,12 +11,17 @@ export const routes: Routes = [
                 component: HomeComponent
             },
             {
-                path: "portifolio",
+                path: "portfolio",
                 component: HomeComponent
             },
             {
-                path: "eletronics",
-                component: Eletronics
+                path: "lab",
+                children: [
+                    {
+                        path: "eletronics",
+                        component: EletronicsComponent
+                    }
+                ]
             }
         ]
     }

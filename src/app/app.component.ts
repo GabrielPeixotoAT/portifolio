@@ -10,5 +10,5 @@ import { FooterComponent } from "./core/layout/footer-component/footer-component
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'portifolio-pessoal';
+  title = 'portfolio-pessoal';
 }

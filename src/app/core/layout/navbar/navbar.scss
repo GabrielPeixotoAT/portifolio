@@ -50,4 +50,10 @@
     .nav-link:hover::after {
         transform: scaleX(1);
     }
+
+    .navbar-toggler {
+        border: 1px solid var(--secondary-border);
+        background-color: var(--secondary);
+        color: var(--primary);
+    }
 }
